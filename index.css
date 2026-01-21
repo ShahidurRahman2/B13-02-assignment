@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+
+.header {
+    background-color: #190E36;
+}
+
+nav {
+    padding: 8px 20px;
+    height: 50px;
+    background-color: #190D37;
+}
+
+.unique-text {
+    color: rgba(247, 233, 63, 1) rgb(217, 180, 216) rgba(145, 0, 248, 1)
+}
+
+.t1 {
+    color: rgb(233, 19, 229);
+}
+
+.banner {
+    height: 450px;
+    width: 100%;
+    background-image: url("../assets/hero-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    align-items: center;
+    position: realative;
+}
+
+.circle {
+    margin-bottom: 110px;
+}
+
+.banner img {}
+
+.s1 {
+    /* background-color: rgba(42, 24, 108, 1); */
+    /* background: #18113D; */
+    background-color: #190D37;
+    margin-top: -90px;
+    position: absolute;
+    width: 100%;
+}
+
+.d1 {
+    margin-top: 20px;
+}
+
+.s2 {
+    background-color: #190D37;
+    margin-top: 30px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.skip-section {
+    background-color: #190D37;
+}
+
+/* .parent-part {
+    background-color: #190D37;
+} */
+
+/* .About-parent {
+    width: 100%;
+    background-color: #190D37;
+} */
+
+/* .About {
+
+    background-color: #190D37;
+    height: 500px; */
+
+/* margin-top: 300px; */
+
+/* } */
+
+/* 
+.About h1 {
+    width: 50%;
+    margin-left: 300px;
+
+}
+
+.About span {
+    width: 50%;
+    margin-left: 350px;
+
+} */
+.parent-part {
+
+    margin-top: 140px;
+}
+
+.child-part h1 {
+    color: #00FF88;
+    margin-bottom: 10px;
+}
