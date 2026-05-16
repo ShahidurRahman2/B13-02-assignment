@@ -20,69 +20,125 @@
 
     <header class="min-h-screen bg-[#190D37]">
 
-        <!-- ================= NAVBAR ================= -->
+        <!-- ================= NAVBAR HOLO NISE ================= -->
 
-        <nav class="border-b border-purple-900 flex justify-between items-center px-6 md:px-20 py-6">
 
-            <!-- Logo -->
+        <nav class="border-b border-purple-900 px-6 md:px-20 py-6">
 
-            <div class="flex items-center">
-                <h1 class="text-3xl font-bold">Tech</h1>
-                <h1 class="text-3xl font-bold text-pink-500">Wave</h1>
+            <div class="flex justify-between items-center">
+
+                <!-- Logo -->
+
+                <div class="flex items-center">
+                    <h1 class="text-3xl font-bold">Tech</h1>
+                    <h1 class="text-3xl font-bold text-pink-500">Wave</h1>
+                </div>
+
+                <!-- Desktop Menu -->
+
+                <ul class="hidden md:flex gap-10 text-lg">
+
+                    <li>
+                        <a class="hover:text-pink-400 transition duration-300" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="hover:text-pink-400 transition duration-300" href="#">
+                            Episodes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="hover:text-pink-400 transition duration-300" href="#">
+                            Host
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="hover:text-pink-400 transition duration-300" href="#">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Desktop Button -->
+
+                <div class="hidden md:block">
+
+                    <button
+                        class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300 shadow-lg">
+
+                        Subscribe
+
+                    </button>
+
+                </div>
+
+                <!-- Mobile Menu -->
+
+                <details class="md:hidden relative">
+
+                    <!-- Hamburger -->
+
+                    <summary class="list-none cursor-pointer">
+
+                        <i class="fa-solid fa-bars text-3xl"></i>
+
+                    </summary>
+
+                    <!-- Dropdown Menu -->
+
+                    <div class="absolute right-0 mt-4 w-52 bg-[#2A0F4D] rounded-2xl p-6 shadow-2xl z-50">
+
+                        <ul class="flex flex-col gap-5 text-center text-lg">
+
+                            <li>
+                                <a class="hover:text-pink-400 transition duration-300" href="#">
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="hover:text-pink-400 transition duration-300" href="#">
+                                    Episodes
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="hover:text-pink-400 transition duration-300" href="#">
+                                    Host
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="hover:text-pink-400 transition duration-300" href="#">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Mobile Button -->
+
+                        <div class="mt-6 flex justify-center">
+
+                            <button
+                                class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 px-5 py-3 rounded-full font-semibold shadow-lg">
+
+                                Subscribe
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
             </div>
-
-            <!-- Menu -->
-
-            <ul class="hidden md:flex gap-10 text-lg">
-
-                <li>
-                    <a class="hover:text-pink-400 transition duration-300" href="#">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a class="hover:text-pink-400 transition duration-300" href="#">
-                        Episodes
-                    </a>
-                </li>
-
-                <li>
-                    <a class="hover:text-pink-400 transition duration-300" href="#">
-                        Host
-                    </a>
-                </li>
-
-                <li>
-                    <a class="hover:text-pink-400 transition duration-300" href="#">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-
-
-            <!-- Button -->
-
-            <div class="hidden md:block">
-
-                <button
-                    class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300 shadow-lg">
-
-                    Subscribe
-
-                </button>
-
-            </div>
-
-            <!-- Mobile Menu -->
-
-            <button class="md:hidden text-3xl">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </button>
 
         </nav>
 
@@ -526,22 +582,26 @@
 
     <!-- ================= HOST SECTION ================= -->
 
-    <section class="py-24 px-6 md:px-20">
+    <section class="py-24 px-6 md:px-20 bg-[#190D37]">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="flex flex-col lg:flex-row items-center gap-14 bg-[#2A0F4D] p-10 rounded-3xl">
 
             <!-- Image -->
 
-            <div>
+            <div class="lg:w-1/4 flex justify-center">
 
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
-                    class="rounded-3xl" alt="host" />
+                <div class="w-60 h-60 rounded-full overflow-hidden border-4 border-pink-500 shadow-2xl">
+
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+                        class="w-full h-full object-cover" alt="host" />
+
+                </div>
 
             </div>
 
-            <!-- Content -->
+            <!-- Text -->
 
-            <div>
+            <div class="lg:w-3/4 text-center lg:text-left">
 
                 <h2 class="text-4xl font-bold mb-6">
 
@@ -557,15 +617,17 @@
 
                 <p class="text-gray-300 leading-8 mb-8">
 
-                    Sarah is a technology entrepreneur, speaker and podcast
-                    host passionate about helping developers and startups
-                    grow through modern technology insights.
+                    Sarah Johnson is a technology entrepreneur,
+                    speaker and podcast host passionate about helping
+                    developers, creators and startups grow through
+                    modern technology insights, productivity strategies
+                    and innovation focused discussions.
 
                 </p>
 
-                <!-- Social -->
+                <!-- Social Icons -->
 
-                <div class="flex gap-6 text-3xl">
+                <div class="flex justify-center lg:justify-start gap-6 text-3xl">
 
                     <i class="fa-brands fa-facebook hover:text-pink-400 transition duration-300"></i>
 
@@ -573,7 +635,7 @@
 
                     <i class="fa-brands fa-linkedin hover:text-pink-400 transition duration-300"></i>
 
-                    <i class="fa-brands fa-twitter hover:text-pink-400 transition duration-300"></i>
+                    <i class="fa-brands fa-youtube hover:text-pink-400 transition duration-300"></i>
 
                 </div>
 
